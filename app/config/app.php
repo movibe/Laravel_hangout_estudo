@@ -120,6 +120,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
+		'Bootstrapper\BootstrapperServiceProvider',
 
 	),
 
@@ -186,7 +187,34 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		// Debugbar
 		'Debugbar' => 'Barryvdh\Debugbar\Facade',
+		// Boostrap
+		'Alert'          => 'Bootstrapper\\Alert',
+		'Accordion'      => 'Bootstrapper\\Accordion',
+		'Badge'          => 'Bootstrapper\\Badge',
+		'Breadcrumb'     => 'Bootstrapper\\Breadcrumb',
+		'Button'         => 'Bootstrapper\\Button',
+		'ButtonGroup'    => 'Bootstrapper\\ButtonGroup',
+		'ButtonToolbar'  => 'Bootstrapper\\ButtonToolbar',
+		'Carousel'       => 'Bootstrapper\\Carousel',
+		'DropdownButton' => 'Bootstrapper\\DropdownButton',
+		'Form'           => 'Bootstrapper\\Form',
+		'Helpers'        => 'Bootstrapper\\Helpers',
+		'Icon'           => 'Bootstrapper\\Icon',
+		'Image'          => 'Bootstrapper\\Image',
+		'Label'          => 'Bootstrapper\\Label',
+		'MediaObject'    => 'Bootstrapper\\MediaObject',
+		'Modal'          => 'Bootstrapper\\Modal',
+		'Navbar'         => 'Bootstrapper\\Navbar',
+		'Navigation'     => 'Bootstrapper\\Navigation',
+		'Paginator'      => 'Bootstrapper\\Paginator',
+		'Panel'          => 'Bootstrapper\\Panel',
+		'Progress'       => 'Bootstrapper\\Progress',
+		'Tabbable'       => 'Bootstrapper\\Tabbable',
+		'Table'          => 'Bootstrapper\\Table',
+		'Thumbnail'      => 'Bootstrapper\\Thumbnail',
+		'Typography'     => 'Bootstrapper\\Typography',
 
 	),
 
