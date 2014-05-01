@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"barryvdh/laravel-debugbar": "1.*",
-		"caouecs/laravel4-lang": "dev-master" 
+		"caouecs/laravel4-lang": "dev-master",
+		"patricktalmadge/bootstrapper": "dev-develop"
 	},
 	"autoload": {
 		"classmap": [
