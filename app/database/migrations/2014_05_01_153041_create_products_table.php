@@ -12,10 +12,10 @@ class CreateProductsTable extends Migration {
 	 */
 	public function up()
 	{
-		//
+		//Cria a Tabela
 		Schema::create('products', function($table){
 			$table->increments('id');
-			$table->stirng('name');
+			$table->string('name');
 			$table->decimal('price',5,2);
 			$table->text('description');
 			$table->timestamps();
@@ -29,7 +29,8 @@ class CreateProductsTable extends Migration {
 	 */
 	public function down()
 	{
-		//
+		// Deleta a tabela se ela existir
+		Schema::dropIfExists('products');
 	}
 
 }
