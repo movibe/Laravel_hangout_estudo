@@ -13,7 +13,12 @@ class ProductsController extends \BaseController {
 	public function index()
 	{
 		//
-		$this->layout->content = '<h2>Produtos Aqui</h2>';
+		
+		$queryProducts = Product::all();
+		
+		$produtos = array('products' => $queryProducts );
+		
+		$this->layout->content = View::make('products.index', $produtos);
 	}
 
 
