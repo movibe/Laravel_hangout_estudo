@@ -5,6 +5,9 @@
                     <var>{{{$product->name}}}</var>
                     <label class="text-muted">R$ {{{$product->price}}}</label>
                 </div>
+                <div class="text">
+                    {{ $product->description }}
+                </div>
                 <div class="options">
                     <a href="javascript:;" class="btn btn-success btn-lg"><i class="glyphicon glyphicon-plus"></i> Comprar</a>
                 </div>

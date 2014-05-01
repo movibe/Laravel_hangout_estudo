@@ -30,6 +30,8 @@ class ProductsController extends \BaseController {
 	public function create()
 	{
 		//
+		// Formulario para Cadastrar Produtos
+		$this->layout->content = View::make('products.create');
 	}
 
 
@@ -40,7 +42,16 @@ class ProductsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		// Crio um Novo Produto
+		$product = new Product;
+		// Alimento com o get dos dados do Post
+		$product->name = Input::get('name');
+		$product->description = Input::get('description');
+		$product->price = Input::get('price');
+		// Salvo o Produto
+		$product->save();
+		// Faço um Redirecionametno para o index 
+		return Redirect::action('ProductsController@index');
 	}
 
 
