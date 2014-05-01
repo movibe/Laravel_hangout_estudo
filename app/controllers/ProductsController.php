@@ -63,7 +63,14 @@ class ProductsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		//SELECT * FROM where id = $id
+		$product = Product::find($id);
+
+		// Variaveis que vou passar para a view
+		$vars  = array('product' => $product);
+
+		// Retorna a View 
+		$this->layout->content = View::make('products.show', $vars);
 	}
 
 

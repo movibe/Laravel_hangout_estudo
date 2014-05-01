@@ -1,4 +1,7 @@
 @section('content')
+	
+	<h2>Cadastrar Produtos</h2>
+
 	{{ Form::open( array('action' => 'ProductsController@store')) }}
 		
 		{{ Form::label('name', 'Nome do Produto') }}

@@ -1,6 +1,6 @@
 @section('content')
 	
-	<h2>Produtos</h2>
+	<h2>Lista de Produtos</h2>
 
 	<div class="row">
 		

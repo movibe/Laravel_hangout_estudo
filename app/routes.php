@@ -21,3 +21,5 @@ Route::get('products', 'ProductsController@index');
 Route::get('products/create', 'ProductsController@create');
 
 Route::post('product', 'ProductsController@store');
+
+Route::get('product/{id}', 'ProductsController@show');
