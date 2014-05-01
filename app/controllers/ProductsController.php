@@ -13,11 +13,11 @@ class ProductsController extends \BaseController {
 	public function index()
 	{
 		//
-		
+		// SELECT * FORM products
 		$queryProducts = Product::all();
-		
+		// Coloco o retorno um array
 		$produtos = array('products' => $queryProducts );
-		
+		// Passo o Array para o meu Content
 		$this->layout->content = View::make('products.index', $produtos);
 	}
 

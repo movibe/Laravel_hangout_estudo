@@ -5,7 +5,7 @@
 	<div class="row">
 		
 		@foreach ($products as $product)		
-
+			<!-- Include de Outra Viw -->
 			@include (  'products._products_title')
 
 		@endforeach
