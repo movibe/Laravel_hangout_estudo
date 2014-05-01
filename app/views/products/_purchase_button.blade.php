@@ -1,5 +1,5 @@
-<form action="#">
-	{{ Form::hidden('id_carteira', 'zizaco@gmail.com') }}
+<form action="https://desenvolvedor.moip.com.br/sandbox/PagamentoMoIP.do">
+	{{ Form::hidden('id_carteira', 'zizco@gmail.com') }}
 	{{ Form::hidden('nome', $product->name ) }}
 	{{ Form::hidden('valor', (int)$product->price * 100 ) }}
 
